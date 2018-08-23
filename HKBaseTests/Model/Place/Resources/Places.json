@@ -1,0 +1,24 @@
+{
+    "header": {
+        "resultCode": 0,
+        "message": "SUCCESS"
+    },
+    "places": [ { "name": "Mc.Donald",
+              "direction": "N",
+              "distance": 1000 },
+               { "name": "Subway",
+               "direction": "E.S",
+               "distance": 100 },
+               { "name": "BurgerKing",
+               "direction": "N.W",
+               "distance": 350 },
+               { "name": "Lotteria",
+               "direction": "W",
+               "distance": 2500 },
+               { "name": "KFC",
+               "direction": "E",
+               "distance": 120 },
+               { "name": "Popeyes",
+               "direction": "S.W",
+               "distance": 1000 } ]
+}

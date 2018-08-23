@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99485197212E8FE500482038 /* HKBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BAA81F212E8B23000E37B6 /* HKBase.framework */; };
+		994851A6212E934E00482038 /* HKCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851A5212E934E00482038 /* HKCardTest.m */; };
+		994851A8212E938E00482038 /* HKRuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851A7212E938E00482038 /* HKRuntimeTest.m */; };
+		994851AA212E93AF00482038 /* HKDispatchQueueTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851A9212E93AF00482038 /* HKDispatchQueueTest.m */; };
+		994851B4212E9AFE00482038 /* HKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851B3212E9AFE00482038 /* HKCard.m */; };
+		994851B7212E9B5000482038 /* HKBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851B6212E9B5000482038 /* HKBrand.m */; };
+		994851BA212E9DDE00482038 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 994851B9212E9DDE00482038 /* Cards.json */; };
+		994851BD212EA31B00482038 /* HKResponseHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851BC212EA31B00482038 /* HKResponseHeader.m */; };
+		994851C0212EA34A00482038 /* HKCardResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851BF212EA34A00482038 /* HKCardResponse.m */; };
+		994851C3212EA3EF00482038 /* HKResultCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851C2212EA3EF00482038 /* HKResultCode.m */; };
+		994851C4212EA9F600482038 /* Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 994851AF212E967900482038 /* Runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994851C5212EA9F600482038 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 994851AD212E963400482038 /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994851C6212EA9F600482038 /* GCD.h in Headers */ = {isa = PBXBuildFile; fileRef = 994851AE212E966300482038 /* GCD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994851C7212EA9F600482038 /* RunloopSchedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 994851B0212E96B300482038 /* RunloopSchedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994851CD212EB18F00482038 /* Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 994851CC212EB18F00482038 /* Places.json */; };
+		994851D0212EB36C00482038 /* HKPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851CF212EB36C00482038 /* HKPlace.m */; };
+		994851D3212EB39000482038 /* HKDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851D2212EB39000482038 /* HKDirection.m */; };
+		994851D5212EB46800482038 /* HKPlaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851D4212EB46800482038 /* HKPlaceTest.m */; };
+		994851D8212EB48A00482038 /* HKPlaceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851D7212EB48A00482038 /* HKPlaceResponse.m */; };
+		994851DC212EC7C800482038 /* HKDispatchSemaphore.h in Headers */ = {isa = PBXBuildFile; fileRef = 994851DA212EC7C800482038 /* HKDispatchSemaphore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		994851DD212EC7C800482038 /* HKDispatchSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851DB212EC7C800482038 /* HKDispatchSemaphore.m */; };
+		994851E1212ED0A500482038 /* HKTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 994851E0212ED0A500482038 /* HKTestObject.m */; };
+		99BAA824212E8B23000E37B6 /* HKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA822212E8B23000E37B6 /* HKBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA838212E8BCB000E37B6 /* HKClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA82E212E8BCA000E37B6 /* HKClass.m */; };
+		99BAA839212E8BCB000E37B6 /* HKInstanceVariable.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA82F212E8BCA000E37B6 /* HKInstanceVariable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA83A212E8BCB000E37B6 /* HKClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA830212E8BCA000E37B6 /* HKClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA83B212E8BCB000E37B6 /* HKRuntimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA831212E8BCA000E37B6 /* HKRuntimeUtility.m */; };
+		99BAA83C212E8BCB000E37B6 /* HKMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA832212E8BCA000E37B6 /* HKMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA83D212E8BCB000E37B6 /* HKRuntimeUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA833212E8BCA000E37B6 /* HKRuntimeUtility.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		99BAA83E212E8BCB000E37B6 /* HKProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA834212E8BCA000E37B6 /* HKProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA83F212E8BCB000E37B6 /* HKMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA835212E8BCA000E37B6 /* HKMethod.m */; };
+		99BAA840212E8BCB000E37B6 /* HKInstanceVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA836212E8BCA000E37B6 /* HKInstanceVariable.m */; };
+		99BAA841212E8BCB000E37B6 /* HKProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA837212E8BCA000E37B6 /* HKProperty.m */; };
+		99BAA84A212E8BD1000E37B6 /* HKModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA842212E8BD1000E37B6 /* HKModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA84B212E8BD1000E37B6 /* HKArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA843212E8BD1000E37B6 /* HKArray.m */; };
+		99BAA84C212E8BD1000E37B6 /* HKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA844212E8BD1000E37B6 /* HKModel.m */; };
+		99BAA84D212E8BD1000E37B6 /* HKEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA845212E8BD1000E37B6 /* HKEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA84E212E8BD1000E37B6 /* HKOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA846212E8BD1000E37B6 /* HKOption.m */; };
+		99BAA84F212E8BD1000E37B6 /* HKEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA847212E8BD1000E37B6 /* HKEnum.m */; };
+		99BAA850212E8BD1000E37B6 /* HKOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA848212E8BD1000E37B6 /* HKOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA851212E8BD1000E37B6 /* HKArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA849212E8BD1000E37B6 /* HKArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA854212E8BD7000E37B6 /* HKDispatchQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA852212E8BD7000E37B6 /* HKDispatchQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA855212E8BD7000E37B6 /* HKDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA853212E8BD7000E37B6 /* HKDispatchQueue.m */; };
+		99BAA85C212E8BDF000E37B6 /* NSObject+PerformBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA856212E8BDF000E37B6 /* NSObject+PerformBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA85D212E8BDF000E37B6 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA857212E8BDF000E37B6 /* NSObject+PerformBlock.m */; };
+		99BAA85E212E8BDF000E37B6 /* NSInvocation+VariableArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA858212E8BDF000E37B6 /* NSInvocation+VariableArguments.m */; };
+		99BAA85F212E8BDF000E37B6 /* NSObject+PerformVariableArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA859212E8BDF000E37B6 /* NSObject+PerformVariableArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA860212E8BDF000E37B6 /* NSInvocation+VariableArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 99BAA85A212E8BDF000E37B6 /* NSInvocation+VariableArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99BAA861212E8BDF000E37B6 /* NSObject+PerformVariableArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BAA85B212E8BDF000E37B6 /* NSObject+PerformVariableArguments.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99485198212E8FE500482038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99BAA816212E8B23000E37B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99BAA81E212E8B23000E37B6;
+			remoteInfo = HKBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		992BDD2E212EEB1D002ABC4B /* HKBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKBase.podspec; sourceTree = SOURCE_ROOT; };
+		99485192212E8FE500482038 /* HKBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99485196212E8FE500482038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994851A5212E934E00482038 /* HKCardTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKCardTest.m; sourceTree = "<group>"; };
+		994851A7212E938E00482038 /* HKRuntimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKRuntimeTest.m; sourceTree = "<group>"; };
+		994851A9212E93AF00482038 /* HKDispatchQueueTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDispatchQueueTest.m; sourceTree = "<group>"; };
+		994851AD212E963400482038 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		994851AE212E966300482038 /* GCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		994851AF212E967900482038 /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		994851B0212E96B300482038 /* RunloopSchedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopSchedule.h; sourceTree = "<group>"; };
+		994851B2212E9AFE00482038 /* HKCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKCard.h; sourceTree = "<group>"; };
+		994851B3212E9AFE00482038 /* HKCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKCard.m; sourceTree = "<group>"; };
+		994851B5212E9B5000482038 /* HKBrand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKBrand.h; sourceTree = "<group>"; };
+		994851B6212E9B5000482038 /* HKBrand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKBrand.m; sourceTree = "<group>"; };
+		994851B9212E9DDE00482038 /* Cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		994851BB212EA31B00482038 /* HKResponseHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKResponseHeader.h; sourceTree = "<group>"; };
+		994851BC212EA31B00482038 /* HKResponseHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKResponseHeader.m; sourceTree = "<group>"; };
+		994851BE212EA34A00482038 /* HKCardResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKCardResponse.h; sourceTree = "<group>"; };
+		994851BF212EA34A00482038 /* HKCardResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKCardResponse.m; sourceTree = "<group>"; };
+		994851C1212EA3EF00482038 /* HKResultCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKResultCode.h; sourceTree = "<group>"; };
+		994851C2212EA3EF00482038 /* HKResultCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKResultCode.m; sourceTree = "<group>"; };
+		994851CC212EB18F00482038 /* Places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Places.json; sourceTree = "<group>"; };
+		994851CE212EB36C00482038 /* HKPlace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKPlace.h; sourceTree = "<group>"; };
+		994851CF212EB36C00482038 /* HKPlace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKPlace.m; sourceTree = "<group>"; };
+		994851D1212EB39000482038 /* HKDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKDirection.h; sourceTree = "<group>"; };
+		994851D2212EB39000482038 /* HKDirection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDirection.m; sourceTree = "<group>"; };
+		994851D4212EB46800482038 /* HKPlaceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKPlaceTest.m; sourceTree = "<group>"; };
+		994851D6212EB48A00482038 /* HKPlaceResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKPlaceResponse.h; sourceTree = "<group>"; };
+		994851D7212EB48A00482038 /* HKPlaceResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKPlaceResponse.m; sourceTree = "<group>"; };
+		994851DA212EC7C800482038 /* HKDispatchSemaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKDispatchSemaphore.h; sourceTree = "<group>"; };
+		994851DB212EC7C800482038 /* HKDispatchSemaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKDispatchSemaphore.m; sourceTree = "<group>"; };
+		994851DF212ED0A500482038 /* HKTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKTestObject.h; sourceTree = "<group>"; };
+		994851E0212ED0A500482038 /* HKTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKTestObject.m; sourceTree = "<group>"; };
+		99BAA81F212E8B23000E37B6 /* HKBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99BAA822212E8B23000E37B6 /* HKBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKBase.h; sourceTree = "<group>"; };
+		99BAA823212E8B23000E37B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99BAA82E212E8BCA000E37B6 /* HKClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKClass.m; sourceTree = "<group>"; };
+		99BAA82F212E8BCA000E37B6 /* HKInstanceVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKInstanceVariable.h; sourceTree = "<group>"; };
+		99BAA830212E8BCA000E37B6 /* HKClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKClass.h; sourceTree = "<group>"; };
+		99BAA831212E8BCA000E37B6 /* HKRuntimeUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKRuntimeUtility.m; sourceTree = "<group>"; };
+		99BAA832212E8BCA000E37B6 /* HKMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKMethod.h; sourceTree = "<group>"; };
+		99BAA833212E8BCA000E37B6 /* HKRuntimeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKRuntimeUtility.h; sourceTree = "<group>"; };
+		99BAA834212E8BCA000E37B6 /* HKProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProperty.h; sourceTree = "<group>"; };
+		99BAA835212E8BCA000E37B6 /* HKMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKMethod.m; sourceTree = "<group>"; };
+		99BAA836212E8BCA000E37B6 /* HKInstanceVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKInstanceVariable.m; sourceTree = "<group>"; };
+		99BAA837212E8BCA000E37B6 /* HKProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProperty.m; sourceTree = "<group>"; };
+		99BAA842212E8BD1000E37B6 /* HKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKModel.h; sourceTree = "<group>"; };
+		99BAA843212E8BD1000E37B6 /* HKArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKArray.m; sourceTree = "<group>"; };
+		99BAA844212E8BD1000E37B6 /* HKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKModel.m; sourceTree = "<group>"; };
+		99BAA845212E8BD1000E37B6 /* HKEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKEnum.h; sourceTree = "<group>"; };
+		99BAA846212E8BD1000E37B6 /* HKOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKOption.m; sourceTree = "<group>"; };
+		99BAA847212E8BD1000E37B6 /* HKEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKEnum.m; sourceTree = "<group>"; };
+		99BAA848212E8BD1000E37B6 /* HKOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKOption.h; sourceTree = "<group>"; };
+		99BAA849212E8BD1000E37B6 /* HKArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKArray.h; sourceTree = "<group>"; };
+		99BAA852212E8BD7000E37B6 /* HKDispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKDispatchQueue.h; sourceTree = "<group>"; };
+		99BAA853212E8BD7000E37B6 /* HKDispatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKDispatchQueue.m; sourceTree = "<group>"; };
+		99BAA856212E8BDF000E37B6 /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
+		99BAA857212E8BDF000E37B6 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		99BAA858212E8BDF000E37B6 /* NSInvocation+VariableArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+VariableArguments.m"; sourceTree = "<group>"; };
+		99BAA859212E8BDF000E37B6 /* NSObject+PerformVariableArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformVariableArguments.h"; sourceTree = "<group>"; };
+		99BAA85A212E8BDF000E37B6 /* NSInvocation+VariableArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+VariableArguments.h"; sourceTree = "<group>"; };
+		99BAA85B212E8BDF000E37B6 /* NSObject+PerformVariableArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformVariableArguments.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9948518F212E8FE500482038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99485197212E8FE500482038 /* HKBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BAA81B212E8B23000E37B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99485193212E8FE500482038 /* HKBaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				994851DE212ED04E00482038 /* Runtime */,
+				994851D9212EB7D000482038 /* GCD */,
+				994851B1212E9AE500482038 /* Model */,
+				99485196212E8FE500482038 /* Info.plist */,
+			);
+			path = HKBaseTests;
+			sourceTree = "<group>";
+		};
+		994851B1212E9AE500482038 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				994851C1212EA3EF00482038 /* HKResultCode.h */,
+				994851C2212EA3EF00482038 /* HKResultCode.m */,
+				994851BB212EA31B00482038 /* HKResponseHeader.h */,
+				994851BC212EA31B00482038 /* HKResponseHeader.m */,
+				994851CA212EB12C00482038 /* Place */,
+				994851C9212EAFF600482038 /* Card */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		994851B8212E9DC100482038 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				994851B9212E9DDE00482038 /* Cards.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		994851C9212EAFF600482038 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				994851B8212E9DC100482038 /* Resources */,
+				994851A5212E934E00482038 /* HKCardTest.m */,
+				994851B5212E9B5000482038 /* HKBrand.h */,
+				994851B6212E9B5000482038 /* HKBrand.m */,
+				994851B2212E9AFE00482038 /* HKCard.h */,
+				994851B3212E9AFE00482038 /* HKCard.m */,
+				994851BE212EA34A00482038 /* HKCardResponse.h */,
+				994851BF212EA34A00482038 /* HKCardResponse.m */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		994851CA212EB12C00482038 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				994851CB212EB17B00482038 /* Resources */,
+				994851D4212EB46800482038 /* HKPlaceTest.m */,
+				994851CE212EB36C00482038 /* HKPlace.h */,
+				994851CF212EB36C00482038 /* HKPlace.m */,
+				994851D1212EB39000482038 /* HKDirection.h */,
+				994851D2212EB39000482038 /* HKDirection.m */,
+				994851D6212EB48A00482038 /* HKPlaceResponse.h */,
+				994851D7212EB48A00482038 /* HKPlaceResponse.m */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		994851CB212EB17B00482038 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				994851CC212EB18F00482038 /* Places.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		994851D9212EB7D000482038 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				994851A9212E93AF00482038 /* HKDispatchQueueTest.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		994851DE212ED04E00482038 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				994851A7212E938E00482038 /* HKRuntimeTest.m */,
+				994851DF212ED0A500482038 /* HKTestObject.h */,
+				994851E0212ED0A500482038 /* HKTestObject.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		994851E2212EDAE100482038 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				992BDD2E212EEB1D002ABC4B /* HKBase.podspec */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99BAA815212E8B23000E37B6 = {
+			isa = PBXGroup;
+			children = (
+				99BAA821212E8B23000E37B6 /* HKBase */,
+				99485193212E8FE500482038 /* HKBaseTests */,
+				99BAA820212E8B23000E37B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99BAA820212E8B23000E37B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99BAA81F212E8B23000E37B6 /* HKBase.framework */,
+				99485192212E8FE500482038 /* HKBaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99BAA821212E8B23000E37B6 /* HKBase */ = {
+			isa = PBXGroup;
+			children = (
+				99BAA82B212E8B78000E37B6 /* Runtime */,
+				99BAA82A212E8B70000E37B6 /* Model */,
+				99BAA82C212E8B82000E37B6 /* GCD */,
+				99BAA82D212E8B9B000E37B6 /* RunloopSchedule */,
+				994851E2212EDAE100482038 /* Supporting Files */,
+				99BAA822212E8B23000E37B6 /* HKBase.h */,
+				99BAA823212E8B23000E37B6 /* Info.plist */,
+			);
+			path = HKBase;
+			sourceTree = "<group>";
+		};
+		99BAA82A212E8B70000E37B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				994851AD212E963400482038 /* Model.h */,
+				99BAA849212E8BD1000E37B6 /* HKArray.h */,
+				99BAA843212E8BD1000E37B6 /* HKArray.m */,
+				99BAA845212E8BD1000E37B6 /* HKEnum.h */,
+				99BAA847212E8BD1000E37B6 /* HKEnum.m */,
+				99BAA842212E8BD1000E37B6 /* HKModel.h */,
+				99BAA844212E8BD1000E37B6 /* HKModel.m */,
+				99BAA848212E8BD1000E37B6 /* HKOption.h */,
+				99BAA846212E8BD1000E37B6 /* HKOption.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99BAA82B212E8B78000E37B6 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				994851AF212E967900482038 /* Runtime.h */,
+				99BAA830212E8BCA000E37B6 /* HKClass.h */,
+				99BAA82E212E8BCA000E37B6 /* HKClass.m */,
+				99BAA82F212E8BCA000E37B6 /* HKInstanceVariable.h */,
+				99BAA836212E8BCA000E37B6 /* HKInstanceVariable.m */,
+				99BAA832212E8BCA000E37B6 /* HKMethod.h */,
+				99BAA835212E8BCA000E37B6 /* HKMethod.m */,
+				99BAA834212E8BCA000E37B6 /* HKProperty.h */,
+				99BAA837212E8BCA000E37B6 /* HKProperty.m */,
+				99BAA833212E8BCA000E37B6 /* HKRuntimeUtility.h */,
+				99BAA831212E8BCA000E37B6 /* HKRuntimeUtility.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		99BAA82C212E8B82000E37B6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				994851AE212E966300482038 /* GCD.h */,
+				99BAA852212E8BD7000E37B6 /* HKDispatchQueue.h */,
+				99BAA853212E8BD7000E37B6 /* HKDispatchQueue.m */,
+				994851DA212EC7C800482038 /* HKDispatchSemaphore.h */,
+				994851DB212EC7C800482038 /* HKDispatchSemaphore.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		99BAA82D212E8B9B000E37B6 /* RunloopSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				994851B0212E96B300482038 /* RunloopSchedule.h */,
+				99BAA85A212E8BDF000E37B6 /* NSInvocation+VariableArguments.h */,
+				99BAA858212E8BDF000E37B6 /* NSInvocation+VariableArguments.m */,
+				99BAA856212E8BDF000E37B6 /* NSObject+PerformBlock.h */,
+				99BAA857212E8BDF000E37B6 /* NSObject+PerformBlock.m */,
+				99BAA859212E8BDF000E37B6 /* NSObject+PerformVariableArguments.h */,
+				99BAA85B212E8BDF000E37B6 /* NSObject+PerformVariableArguments.m */,
+			);
+			path = RunloopSchedule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99BAA81C212E8B23000E37B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BAA83E212E8BCB000E37B6 /* HKProperty.h in Headers */,
+				99BAA84A212E8BD1000E37B6 /* HKModel.h in Headers */,
+				99BAA83C212E8BCB000E37B6 /* HKMethod.h in Headers */,
+				99BAA83A212E8BCB000E37B6 /* HKClass.h in Headers */,
+				99BAA854212E8BD7000E37B6 /* HKDispatchQueue.h in Headers */,
+				99BAA851212E8BD1000E37B6 /* HKArray.h in Headers */,
+				99BAA839212E8BCB000E37B6 /* HKInstanceVariable.h in Headers */,
+				99BAA850212E8BD1000E37B6 /* HKOption.h in Headers */,
+				994851C4212EA9F600482038 /* Runtime.h in Headers */,
+				994851C5212EA9F600482038 /* Model.h in Headers */,
+				994851C6212EA9F600482038 /* GCD.h in Headers */,
+				994851C7212EA9F600482038 /* RunloopSchedule.h in Headers */,
+				99BAA85F212E8BDF000E37B6 /* NSObject+PerformVariableArguments.h in Headers */,
+				994851DC212EC7C800482038 /* HKDispatchSemaphore.h in Headers */,
+				99BAA84D212E8BD1000E37B6 /* HKEnum.h in Headers */,
+				99BAA860212E8BDF000E37B6 /* NSInvocation+VariableArguments.h in Headers */,
+				99BAA85C212E8BDF000E37B6 /* NSObject+PerformBlock.h in Headers */,
+				99BAA83D212E8BCB000E37B6 /* HKRuntimeUtility.h in Headers */,
+				99BAA824212E8B23000E37B6 /* HKBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99485191212E8FE500482038 /* HKBaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9948519C212E8FE500482038 /* Build configuration list for PBXNativeTarget "HKBaseTests" */;
+			buildPhases = (
+				9948518E212E8FE500482038 /* Sources */,
+				9948518F212E8FE500482038 /* Frameworks */,
+				99485190212E8FE500482038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99485199212E8FE500482038 /* PBXTargetDependency */,
+			);
+			name = HKBaseTests;
+			productName = HKBaseTests;
+			productReference = 99485192212E8FE500482038 /* HKBaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99BAA81E212E8B23000E37B6 /* HKBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99BAA827212E8B23000E37B6 /* Build configuration list for PBXNativeTarget "HKBase" */;
+			buildPhases = (
+				99BAA81A212E8B23000E37B6 /* Sources */,
+				99BAA81B212E8B23000E37B6 /* Frameworks */,
+				99BAA81C212E8B23000E37B6 /* Headers */,
+				99BAA81D212E8B23000E37B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKBase;
+			productName = HKBase;
+			productReference = 99BAA81F212E8B23000E37B6 /* HKBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99BAA816212E8B23000E37B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Seunghan Kim";
+				TargetAttributes = {
+					99485191212E8FE500482038 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					99BAA81E212E8B23000E37B6 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 99BAA819212E8B23000E37B6 /* Build configuration list for PBXProject "HKBase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99BAA815212E8B23000E37B6;
+			productRefGroup = 99BAA820212E8B23000E37B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99BAA81E212E8B23000E37B6 /* HKBase */,
+				99485191212E8FE500482038 /* HKBaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99485190212E8FE500482038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994851BA212E9DDE00482038 /* Cards.json in Resources */,
+				994851CD212EB18F00482038 /* Places.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BAA81D212E8B23000E37B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9948518E212E8FE500482038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994851C3212EA3EF00482038 /* HKResultCode.m in Sources */,
+				994851D3212EB39000482038 /* HKDirection.m in Sources */,
+				994851BD212EA31B00482038 /* HKResponseHeader.m in Sources */,
+				994851D0212EB36C00482038 /* HKPlace.m in Sources */,
+				994851B7212E9B5000482038 /* HKBrand.m in Sources */,
+				994851E1212ED0A500482038 /* HKTestObject.m in Sources */,
+				994851B4212E9AFE00482038 /* HKCard.m in Sources */,
+				994851AA212E93AF00482038 /* HKDispatchQueueTest.m in Sources */,
+				994851D5212EB46800482038 /* HKPlaceTest.m in Sources */,
+				994851A6212E934E00482038 /* HKCardTest.m in Sources */,
+				994851A8212E938E00482038 /* HKRuntimeTest.m in Sources */,
+				994851C0212EA34A00482038 /* HKCardResponse.m in Sources */,
+				994851D8212EB48A00482038 /* HKPlaceResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99BAA81A212E8B23000E37B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99BAA855212E8BD7000E37B6 /* HKDispatchQueue.m in Sources */,
+				99BAA84B212E8BD1000E37B6 /* HKArray.m in Sources */,
+				99BAA861212E8BDF000E37B6 /* NSObject+PerformVariableArguments.m in Sources */,
+				99BAA84E212E8BD1000E37B6 /* HKOption.m in Sources */,
+				99BAA83F212E8BCB000E37B6 /* HKMethod.m in Sources */,
+				99BAA841212E8BCB000E37B6 /* HKProperty.m in Sources */,
+				99BAA84F212E8BD1000E37B6 /* HKEnum.m in Sources */,
+				994851DD212EC7C800482038 /* HKDispatchSemaphore.m in Sources */,
+				99BAA85D212E8BDF000E37B6 /* NSObject+PerformBlock.m in Sources */,
+				99BAA840212E8BCB000E37B6 /* HKInstanceVariable.m in Sources */,
+				99BAA84C212E8BD1000E37B6 /* HKModel.m in Sources */,
+				99BAA83B212E8BCB000E37B6 /* HKRuntimeUtility.m in Sources */,
+				99BAA85E212E8BDF000E37B6 /* NSInvocation+VariableArguments.m in Sources */,
+				99BAA838212E8BCB000E37B6 /* HKClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99485199212E8FE500482038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99BAA81E212E8B23000E37B6 /* HKBase */;
+			targetProxy = 99485198212E8FE500482038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9948519A212E8FE500482038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKBaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hskim.HKBaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9948519B212E8FE500482038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HKBaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hskim.HKBaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99BAA825212E8B23000E37B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99BAA826212E8B23000E37B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99BAA828212E8B23000E37B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hskim.HKBase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99BAA829212E8B23000E37B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hskim.HKBase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9948519C212E8FE500482038 /* Build configuration list for PBXNativeTarget "HKBaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948519A212E8FE500482038 /* Debug */,
+				9948519B212E8FE500482038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99BAA819212E8B23000E37B6 /* Build configuration list for PBXProject "HKBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BAA825212E8B23000E37B6 /* Debug */,
+				99BAA826212E8B23000E37B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99BAA827212E8B23000E37B6 /* Build configuration list for PBXNativeTarget "HKBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BAA828212E8B23000E37B6 /* Debug */,
+				99BAA829212E8B23000E37B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99BAA816212E8B23000E37B6 /* Project object */;
+}
